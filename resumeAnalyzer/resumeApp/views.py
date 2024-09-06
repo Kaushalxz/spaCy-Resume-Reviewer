@@ -69,12 +69,20 @@ def extract_text_from_pdf(pdf):
             text += page.get_text()
     return text
 
-def generate_recommendations(resume_doc, job_doc,semantic_similarity,keyword_match_score):
+def generate_recommendations(resume_doc, job_doc, semantic_similarity, keyword_match_score):
     recommendations = []
-    if semantic_similarity >= 0.5:
-        recommendations.append("the overall topics, context, and meanings within the resume dont closely align with those in the job")
-    # Example recommendation logic
-    # Add your custom recommendation logic here
+
+    if semantic_similarity >= 0.81:
+        recommendations.append("The CV is an excellent match for the job description. It clearly highlights the relevant skills, experiences, and qualifications required for the job. Minimal adjustments are needed.")
+    elif semantic_similarity >= 0.61:
+        recommendations.append("The CV aligns well with the job description. There are several relevant skills and experiences, but there may still be room for improvement. Consider fine-tuning the language or adding more specific examples to better demonstrate your suitability.")
+    elif semantic_similarity >= 0.41:
+        recommendations.append("The CV is somewhat aligned with the job description. There are some matches in skills and experiences, but further optimization is needed to better match the job requirements.")
+    elif semantic_similarity >= 0.21:
+        recommendations.append("The CV shows some relevance, but there are significant gaps. Focus on highlighting more relevant experiences and skills that align with the job description.")
+    else:
+        recommendations.append("The CV does not align well with the job description. Consider revising the CV to include more relevant skills, experiences, and keywords that match the job requirements.")
+
     return recommendations
 
 class ResumeUploadView(APIView):
