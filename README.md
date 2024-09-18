@@ -1,6 +1,5 @@
 # 📄 Resume Analyzer
 
-![Resume Analyzer Banner](https://via.placeholder.com/1200x300.png?text=Resume+Analyzer)
 
 A powerful AI-driven application that helps you analyze resumes and match them with job descriptions using advanced Natural Language Processing (NLP) techniques. This project uses a Django REST API backend and a React-based frontend to deliver an intuitive and seamless experience.
 
