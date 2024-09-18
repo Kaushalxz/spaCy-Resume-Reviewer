@@ -5,7 +5,7 @@ A powerful AI-driven application that helps you analyze resumes and match them w
 
 ## 🚀 Features
 
-- **Resume Upload**: Upload resumes in different formats (PDF, DOCX) and analyze them.
+- **Resume Upload**: Upload resumes in PDF and analyze them.
 - **Job Description Matching**: Compare the resume with a job description to find the best match.
 - **Keyword Extraction**: Extracts key skills and phrases from resumes and job descriptions.
 - **TF-IDF Matching**: Uses TF-IDF to determine keyword importance and match scores.
