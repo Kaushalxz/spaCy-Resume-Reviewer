@@ -1,78 +1,29 @@
-<<<<<<< HEAD
-# AI-spaCy-Resume-Analyzer
-=======
-<<<<<<< HEAD
-# Getting Started with Create React App
+# 📄 Resume Analyzer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Resume Analyzer Banner](https://via.placeholder.com/1200x300.png?text=Resume+Analyzer)
 
-## Available Scripts
+A powerful AI-driven application that helps you analyze resumes and match them with job descriptions using advanced Natural Language Processing (NLP) techniques. This project uses a Django REST API backend and a React-based frontend to deliver an intuitive and seamless experience.
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- **Resume Upload**: Upload resumes in different formats (PDF, DOCX) and analyze them.
+- **Job Description Matching**: Compare the resume with a job description to find the best match.
+- **Keyword Extraction**: Extracts key skills and phrases from resumes and job descriptions.
+- **TF-IDF Matching**: Uses TF-IDF to determine keyword importance and match scores.
+- **Semantic Similarity**: Calculates how semantically similar a resume is to the job description.
+- **Custom Recommendations**: Provides tailored suggestions to enhance resume relevance.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React, Axios, HTML, CSS
+- **Backend**: Django REST Framework
+- **AI & NLP**: Python, spaCy, scikit-learn (TF-IDF)
+- **Database**: SQLite (or any Django-supported database)
+- **File Handling**: Python `os`, `pymupdf` for PDF handling
 
-### `npm test`
+## 🧠 How It Works
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# spaCy-Resume-Analyzer
->>>>>>> 7614a2c6772cd6db8d736062479ca1c6c79068c5
->>>>>>> 73f78f39897fb752a78f30468923af76a0dc0571
+1. **Upload Resume**: Users upload their resumes and provide a job description.
+2. **NLP Processing**: The backend processes the resume using spaCy to extract keywords and evaluate semantic similarity.
+3. **TF-IDF Analysis**: The system computes keyword match scores using TF-IDF vectorization.
+4. **Results**: The backend sends the analysis results back to the frontend, which are displayed to the user.
