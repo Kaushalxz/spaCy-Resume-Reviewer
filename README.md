@@ -26,3 +26,10 @@ A powerful AI-driven application that helps you analyze resumes and match them w
 2. **NLP Processing**: The backend processes the resume using spaCy to extract keywords and evaluate semantic similarity.
 3. **TF-IDF Analysis**: The system computes keyword match scores using TF-IDF vectorization.
 4. **Results**: The backend sends the analysis results back to the frontend, which are displayed to the user.
+
+
+## References
+
+1. https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html
+2. https://www.youtube.com/watch?v=lBO1L8pgR9s
+3. https://vasista.medium.com/preparing-the-text-data-with-scikit-learn-b31a3df567e
