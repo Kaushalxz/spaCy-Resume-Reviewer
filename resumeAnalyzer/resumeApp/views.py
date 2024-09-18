@@ -62,7 +62,6 @@ def analyze_resume(resume_path, job_description):
 
     return resume_text, analysis_results
 
-# Function to extract text from PDF
 def extract_text_from_pdf(pdf):
     text = ""
     with fitz.open(pdf) as doc:
@@ -70,7 +69,6 @@ def extract_text_from_pdf(pdf):
             text += page.get_text()
     return text
 
-# Function to generate recommendations based on analysis results
 def generate_recommendations(resume_doc, job_doc, semantic_similarity, keyword_match_score):
     recommendations = []
 
