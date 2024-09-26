@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ResumeUpload = () => {
     const [file, setFile] = useState(null);
@@ -35,22 +36,21 @@ const ResumeUpload = () => {
     };
 
     return (
-        <div>
+        <div className="container mt-5">
+            <h2 className="mb-4">Resume Upload</h2>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Upload Resume:</label>
-                    <br />
-                    <input type="file" onChange={handleFileChange} />
+                <div className="mb-3">
+                    <label className="form-label">Upload Resume:</label>
+                    <input type="file" className="form-control" onChange={handleFileChange} />
                 </div>
-                <div>
-                    <label>Job Description:</label>
-                    <br />
-                    <textarea value={jobDescription} onChange={handleJobDescriptionChange} />
+                <div className="mb-3">
+                    <label className="form-label">Job Description:</label>
+                    <textarea className="form-control" rows="5" value={jobDescription} onChange={handleJobDescriptionChange} />
                 </div>
-                <button type="submit">Upload</button>
+                <button type="submit" className="btn btn-primary">Upload</button>
             </form>
             {recommendation && (
-                <div>
+                <div className="mt-4">
                     <h3>Recommendation:</h3>
                     <p>{recommendation}</p>
                 </div>
